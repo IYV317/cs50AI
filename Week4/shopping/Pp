@@ -1,0 +1,36 @@
+import random
+
+# Predefined values
+first_name = "Iman"
+wallet_amount = 100.00  # Iman's wallet amount
+
+# Predefined shoe prices
+shoe1_price = 75.25  # Price of shoe 1
+shoe2_price = 92.50  # Price of shoe 2
+
+# Greeting message
+print(f"Hi {first_name}! Let's go shopping for some shoes! 👟🛍️")
+print(f"You have ${wallet_amount:.2f} in your wallet.\n")
+
+# Display shoe prices
+print(f"Shoe 1: ${shoe1_price:.2f}")
+print(f"Shoe 2: ${shoe2_price:.2f}\n")
+
+# Calculations
+total_cost = shoe1_price + shoe2_price
+bulk_cost = (shoe1_price * 2) + (shoe2_price * 2)
+average_cost = total_cost / 2
+
+print(f"Total Cost: ${total_cost:.2f}")
+print(f"Bulk Cost: ${bulk_cost:.2f}")
+print(f"Average Cost per Shoe: ${average_cost:.2f}\n")
+
+# Decision-making logic
+if wallet_amount >= total_cost:
+    print("You can afford both shoes! 🛍️")
+elif wallet_amount >= shoe1_price:
+    print("You can afford shoe 1.")
+elif wallet_amount >= shoe2_price:
+    print("You can afford shoe 2.")
+else:
+    print("You can't afford either shoe right now. 💸")
